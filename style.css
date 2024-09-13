@@ -1,0 +1,43 @@
+body, 
+html, 
+* {
+    font-size: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    width: 30rem;
+    height: 35rem;
+    border: solid black;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url("img/candy1.jpg");
+    background-size: cover;
+}
+
+.container{
+    width: 30rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-img {
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+}
+
+.card-header {
+    font-size: 2.2rem;
+    margin-top: 1.2rem;
+}
+
+.card-desc {
+    margin: 1.2rem;
+}
