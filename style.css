@@ -1,15 +1,29 @@
 body, 
-html, h1,p
+html,
 * {
     font-size: 10px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: rgb(196, 67, 146);
+    color: rgb(194, 64, 151);
+}
+
+.title{
+    font-size: 30px;
+    color: rgba(194, 64, 151, 0.74);
+    border-style: solid;
+    border-color: rgb(177, 74, 172);
+    border-radius: 3px;
+    border-width: 3px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(226, 141, 243, 0.555);
+    background-size: cover;
 }
   
 .card{
-    width: 40rem;
+    width: 42rem;
     border: dashed rgb(223, 152, 255);
     border-radius: 10px;
     margin:1%;
@@ -17,7 +31,7 @@ html, h1,p
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(228, 166, 166, 0.877)
+    background-color: rgba(245, 144, 206, 0.568)
 }
 
 .container{;
