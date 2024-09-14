@@ -1,46 +1,49 @@
 body, 
-html, 
+html, h1,p
 * {
     font-size: 10px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
+    color: rgb(196, 67, 146);
 }
-
-
+  
 .card{
-    width: 35rem;
-    height: 35rem;
-    border: solid black;
-    border-radius: 3px;
+    width: 40rem;
+    border: dashed rgb(223, 152, 255);
+    border-radius: 10px;
+    margin:1%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    background-color: rgba(228, 166, 166, 0.877)
 }
-
-
 
 .container{;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    justify-content: space-around;
+    background-image: url(https://i.pinimg.com/originals/dd/02/63/dd0263fa695bb26310399a3383d31002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card-img {
     width: 100%;
-    height: 40%;
-    object-fit: cover;
+    height: 100%;
+    background-image:;
+    object-fit:cover;
+    
 }
 
 .card-header {
     font-size: 2.2rem;
-    margin-top: 1.2rem;
+    margin-top: 1rem;
 }
 
 .card-desc {
-    margin: 1.2rem;
+    margin: 1rem;
+    font-size: 1.7rem;
 }
