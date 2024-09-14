@@ -5,10 +5,13 @@ html,
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+
 .card{
-    width: 30rem;
+    width: 35rem;
     height: 35rem;
     border: solid black;
     border-radius: 3px;
@@ -16,15 +19,15 @@ html,
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-image: url("img/candy1.jpg");
-    background-size: cover;
 }
 
-.container{
-    width: 30rem;
+
+
+.container{;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
 }
 
 .card-img {
