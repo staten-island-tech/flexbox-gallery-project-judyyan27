@@ -4,7 +4,16 @@ html,
 
    margin: 0;
     padding: 0;
-    color: rgb(194, 64, 151);
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+p {
+    margin: 0.5rem;
+    font-size: 1.5rem;
 }
 
 .title{
@@ -25,7 +34,7 @@ html,
  
 .title:hover{
     color: rgba(228, 47, 219, 0.839);
-    transform: scale(1.05);
+    transform: scale(.95);
     filter: drop-shadow(5)
 }
   
@@ -42,25 +51,29 @@ html,
     background-position: center;
 }
 
+
+
 .card-pink{
-    width: 30rem;
-    height: 38rem;
+    width: 20em;
+    height: 25em;
     border: dashed rgb(223, 152, 255);
+    
     border-radius: 1rem;
     margin:0.25rem;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: rgba(245, 144, 206, 0.63);
+
+    box-shadow: 5px 5px rgba(240, 34, 229, 0.39);
 }
 
 
-
 .card-yellow{
-    width: 30rem;
-    height: 38rem;
+    width: 20em;
+    height: 25em;
     border: dashed rgb(255, 240, 152);
     border-radius: 1rem;
     margin:0.25rem;
@@ -70,11 +83,15 @@ html,
     align-items: center;
     justify-content: space-around;
     background-color: rgba(245, 240, 144, 0.63);
+
+    box-shadow: 5px 5px rgba(237, 240, 34, 0.39);
+
+    
 }
 
 .card-blue{
-    width: 30rem;
-    height: 38rem;
+    width: 20em;
+    height: 25em;
     border: dashed rgb(152, 183, 255);
     border-radius: 1rem;
     margin:0.25rem;
@@ -84,21 +101,49 @@ html,
     align-items: center;
     justify-content: space-around;
     background-color: rgba(144, 164, 245, 0.63);
+
+    box-shadow: 5px 5px rgba(41, 34, 240, 0.39);
 }
+
 
 .card-img {
     width: 100%;
     height: 100%;
-    object-fit: cover ;
+    object-fit: cover;
     
 }
 
-.card-header {
-    font-size: 2.4rem;
-    margin-top: 1.1rem;
+
+
+.header-pink{
+    color: rgb(194, 64, 151);
 }
 
+.header-yellow{
+    color: rgb(194, 162, 64);
+}
+
+.header-blue{
+    color: rgb(64, 73, 194);
+}
+
+
+
 .card-desc {
-    margin: 1rem;
-    font-size: 1.7rem;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.desc-pink {
+    color: rgb(194, 64, 151);
+}
+
+.desc-yellow {
+    color: rgb(194, 162, 64);
+
+}
+
+.desc-blue {
+    color: rgb(64, 73, 194);
+
 }
