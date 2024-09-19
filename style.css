@@ -1,7 +1,6 @@
 body, 
 html,
 * {
-
    margin: 0;
     padding: 0;
 }
@@ -33,7 +32,7 @@ p {
 }
  
 .title:hover{
-    color: rgba(228, 47, 219, 0.839);
+    color: rgba(125, 23, 120, 0.839);
     transform: scale(.95);
     filter: drop-shadow(5)
 }
@@ -54,8 +53,8 @@ p {
 
 
 .card-pink{
-    width: 20em;
-    height: 25em;
+    width: 20rem;
+    height: 23em;
     border: dashed rgb(223, 152, 255);
     
     border-radius: 1rem;
@@ -65,15 +64,26 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgba(245, 144, 206, 0.63);
+    background-color: #f590cea1;
 
-    box-shadow: 5px 5px rgba(240, 34, 229, 0.39);
+    box-shadow: 5px 5px #f022e563;
+    animation-name: colors;
+    animation-duration: 20s;
 }
+
+@keyframes colors {
+    25%     {background-color: #f590cea1;}
+    25%     {background-color: #f590cea1;}
+    25%     {background-color: #f590cea1;}
+    25%     {background-color: #f590cea1;}
+    25%     {background-color: #f590cea1;}
+    25%     {background-color: #f590cea1;}
+  }
 
 
 .card-yellow{
-    width: 20em;
-    height: 25em;
+    width: 20rem;
+    height: 23em;
     border: dashed rgb(255, 240, 152);
     border-radius: 1rem;
     margin:0.25rem;
@@ -89,9 +99,29 @@ p {
     
 }
 
+#spin-please {
+	background: rgb(124, 128, 0);
+	animation: spin 3s infinite ease-in-out;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  49% {
+    transform: rotate(359deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .card-blue{
-    width: 20em;
-    height: 25em;
+    width: 20rem;
+    height: 23em;
     border: dashed rgb(152, 183, 255);
     border-radius: 1rem;
     margin:0.25rem;
@@ -105,6 +135,31 @@ p {
     box-shadow: 5px 5px rgba(41, 34, 240, 0.39);
 }
 
+@media screen and (min-width: 1100px;){
+    .container{
+        flex-direction: row;
+    }
+
+    .card-blue{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 800px;){
+    .container{
+        flex-direction: column;
+    }
+
+    .card-blue{
+        width: 90%;
+    }
+    .card-pink{
+        width: 90%;
+    }
+    .card-yellow{
+        width: 90%;
+    }
+}
 
 .card-img {
     width: 100%;
@@ -112,6 +167,27 @@ p {
     object-fit: cover;
     
 }
+
+
+
+.header-pink:hover{
+    color: rgba(228, 47, 219, 0.839);
+    transform: scale(1.5);
+    filter: drop-shadow(5)
+}
+
+.header-yellow:hover{
+    color: rgba(169, 159, 53, 0.839);
+    transform: scale(1.5);
+    filter: drop-shadow(5)
+}
+
+.header-blue:hover{
+    color: rgba(77, 47, 228, 0.839);
+    transform: scale(1.5);
+    filter: drop-shadow(5)
+}
+
 
 
 
@@ -128,22 +204,7 @@ p {
 }
 
 
-
 .card-desc {
     margin: 0.5rem;
     font-size: 1.5rem;
-}
-
-.desc-pink {
-    color: rgb(194, 64, 151);
-}
-
-.desc-yellow {
-    color: rgb(194, 162, 64);
-
-}
-
-.desc-blue {
-    color: rgb(64, 73, 194);
-
 }
