@@ -27,14 +27,14 @@ p {
     padding: 0;
     background-color: rgba(226, 141, 243, 0.555);
     background-size: cover;
+    animation: 3s linear 1s slidein;
+    
 
-    transition: all(2.5s);
 }
  
 .title:hover{
     color: rgba(125, 23, 120, 0.839);
-    transform: scale(.95);
-    filter: drop-shadow(5)
+    transform: scale(.9);
 }
   
 
@@ -71,16 +71,6 @@ p {
     animation-duration: 20s;
 }
 
-@keyframes colors {
-    25%     {background-color: #f590cea1;}
-    25%     {background-color: #f590cea1;}
-    25%     {background-color: #f590cea1;}
-    25%     {background-color: #f590cea1;}
-    25%     {background-color: #f590cea1;}
-    25%     {background-color: #f590cea1;}
-  }
-
-
 .card-yellow{
     width: 20rem;
     height: 23em;
@@ -99,10 +89,12 @@ p {
     
 }
 
-#spin-please {
-	background: rgb(124, 128, 0);
-	animation: spin 3s infinite ease-in-out;
+.card-pink:hover {
+	animation: spin 4s infinite ease-in-out;
+    outline: 0.5rem groove rgba(243, 120, 233, 0.959);
 }
+
+
 
 @keyframes spin {
   0% {
@@ -115,7 +107,7 @@ p {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(359deg);
   }
 }
 
@@ -134,6 +126,28 @@ p {
 
     box-shadow: 5px 5px rgba(41, 34, 240, 0.39);
 }
+
+
+.card-pink:hover {
+	animation: spin 4s infinite;
+    outline: 0.5rem groove rgba(243, 120, 233, 0.959);
+}
+
+.card-yellow:hover {
+    transform: scale(1.2);
+    transform: skewY(10deg);
+    outline: 0.5rem groove rgba(243, 241, 120, 0.959);
+
+}
+
+
+.card-blue:hover {
+    transform: skew(10deg);
+    outline: 0.5rem groove rgba(120, 169, 243, 0.959);
+}
+
+
+
 
 @media screen and (min-width: 1100px;){
     .container{
@@ -173,19 +187,19 @@ p {
 .header-pink:hover{
     color: rgba(228, 47, 219, 0.839);
     transform: scale(1.5);
-    filter: drop-shadow(5)
+    filter: saturate(75%)
 }
 
 .header-yellow:hover{
     color: rgba(169, 159, 53, 0.839);
     transform: scale(1.5);
-    filter: drop-shadow(5)
+    filter: brightness(40%);
 }
 
 .header-blue:hover{
     color: rgba(77, 47, 228, 0.839);
-    transform: scale(1.5);
-    filter: drop-shadow(5)
+    transform: scale(.9);
+    filter: sepia(50%);
 }
 
 
