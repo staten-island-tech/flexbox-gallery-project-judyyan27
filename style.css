@@ -30,25 +30,26 @@ p {
     background-color: rgba(226, 141, 243, 0.555);
     background-size: cover;
 
-    animation: 3s linear 1s infinite alternate slidein;
+    animation: 3s linear 1s slidein;
 }
 
 .title:hover{
     color: rgba(125, 23, 120, 0.839);
     transform: scale(.95);
     filter: drop-shadow(5);
-    animation: 3s linear 1s infinite alternate slidein;
+    transform: scale(.9);
 
-    animation-name: colors;
-    animation-duration: 5s;
+    animation-name: pink-gradient;
+    animation-duration: 3s;
 }
   
 
-.container{;
+.container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
 
     background-image: url(https://wallpapercave.com/wp/wp7744181.jpg);
     background-repeat: no-repeat;
@@ -56,13 +57,9 @@ p {
     background-position: center;
 }
 
-
-
-.card-pink{
-    width: 30rem;
-    height: 28rem;
-    border: double rgba(229, 130, 229, 0.741);
-    
+.card {
+    width: 20rem;
+    height: 25rem;
     border-radius: 1rem;
     border-width: 1rem;
     margin:1rem;
@@ -71,44 +68,28 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #f590cea1;
 
+}
+
+
+
+#card-pink{
+    border: double rgba(229, 130, 229, 0.741);
+    background-color: #f590cea1;
     box-shadow: 5px 5px #f022e563;
 }
 
-.card-yellow{
-    width: 30rem;
-    height: 28rem;
+#card-yellow{
     border: dashed rgb(255, 240, 152);
-    border-width: .5rem;
-    border-radius: 1rem;
-    margin:1rem;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
     background-color: rgba(245, 240, 144, 0.63);
-
     box-shadow: 5px 5px rgba(237, 240, 34, 0.39);
 
     
 }
 
-.card-blue{
-    width: 30rem;
-    height: 28rem;
+#card-blue{
     border: groove rgb(152, 183, 255);
-    border-radius: 1rem;
-    border-width: 1rem;
-    margin:1rem;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
     background-color: rgba(144, 164, 245, 0.63);
-
     box-shadow: 5px 5px rgba(41, 34, 240, 0.39);
 }
 
@@ -118,15 +99,11 @@ p {
 }
 
 @keyframes pink-c {
-    100%     {background-color: rgba(226, 141, 243, 0.555);}
-    50%     {background-color: rgba(228, 161, 241, 0.745)}
-    75%     {background-color: rgba(220, 156, 233, 0.879)}
-    90%     {background-color: rgba(226, 124, 247, 0.841)}
-    100%     {background-color: rgba(226, 141, 243, 0.555);}
+    0%     {background-color: rgba(226, 141, 243, 0.555);}
+    50%     {background-color: rgba(239, 180, 251, 0.745)}
+    75%     {background-color: rgba(217, 154, 230, 0.879)}
+    100%     {background-color: rgba(226, 124, 247, 0.841)}
 
-}
-
-.card-yellow:hover {
 
 }
 
@@ -158,29 +135,64 @@ p {
 }
 
 .card-img {
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     object-fit: cover;
     
 }
+
+
+#card-pink:hover {
+	animation: spin 1.5s;
+    animation: spin 1.5s;
+    outline: 0.5rem groove rgba(243, 120, 233, 0.959);
+}
+
+#card-yellow:hover {
+    transform: scale(1.2);
+    transform: skewY(10deg);
+    outline: 0.5rem groove rgba(243, 241, 120, 0.959);
+
+}
+
+#card-blue:hover {
+    transform: skew(10deg);
+    outline: 0.5rem groove rgba(120, 169, 243, 0.959);
+}
+
+
+@keyframes spin{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes pink-gradient {
+    100%     {background-color: rgba(226, 141, 243, 0.555);}
+    50%     {background-color: rgba(228, 161, 241, 0.745);}
+    50%     {background-color: rgba(229, 175, 240, 0.879);}
+    50%     {background-color: rgba(224, 141, 240, 0.841);}
+    100%     {background-color: rgba(226, 141, 243, 0.555);}
+
+}
+
 
 
 
 .header-pink:hover{
     color: rgba(228, 47, 219, 0.839);
     transform: scale(1.5);
-    filter: drop-shadow(5)
+    filter: saturate(75%)
 }
 
 .header-yellow:hover{
     transform: scale(.9);
-    filter: saturate(200%);
+    filter: brightness(40%);
 }
 
 .header-blue:hover{
     color: rgba(77, 47, 228, 0.839);
-    transform: scale(1);
-    filter: grayscale(90%);
+    transform: scale(.9);
+    filter: sepia(50%);
 }
 
 
