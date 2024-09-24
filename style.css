@@ -29,8 +29,6 @@ p {
     padding: 0;
     background-color: rgba(226, 141, 243, 0.555);
     background-size: cover;
-
-    animation: 3s linear 1s slidein;
 }
 
 .title:hover{
@@ -40,7 +38,7 @@ p {
     transform: scale(.9);
 
     animation-name: pink-gradient;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
   
 
@@ -79,11 +77,10 @@ p {
     box-shadow: 5px 5px #f022e563;
 }
 
-#card-yellow{
+#card-yellow1,#card-yellow2{
     border: dashed rgb(255, 240, 152);
     background-color: rgba(245, 240, 144, 0.63);
     box-shadow: 5px 5px rgba(237, 240, 34, 0.39);
-
     
 }
 
@@ -93,10 +90,6 @@ p {
     box-shadow: 5px 5px rgba(41, 34, 240, 0.39);
 }
 
-.title:hover {
-    animation-name: pink-c;
-    animation-duration: 3s;
-}
 
 @keyframes pink-c {
     0%     {background-color: rgba(226, 141, 243, 0.555);}
@@ -143,21 +136,31 @@ p {
 
 
 #card-pink:hover {
-	animation: spin 1.5s;
-    animation: spin 1.5s;
+	animation: spin 1.5s infinite;
     outline: 0.5rem groove rgba(243, 120, 233, 0.959);
 }
 
-#card-yellow:hover {
-    transform: scale(1.2);
-    transform: skewY(10deg);
+
+
+#card-blue:hover {
+    transform: skew(10deg);
+    animation: blue-gradient;
+    animation-duration: 2s;
+    outline: 0.5rem groove rgba(120, 169, 243, 0.959);
+}
+
+#card-yellow1:hover {
+    transform: skewY(6deg);
+    animation: yellow-gradient;
+    animation-duration: 2s;
     outline: 0.5rem groove rgba(243, 241, 120, 0.959);
 
 }
 
-#card-blue:hover {
-    transform: skew(10deg);
-    outline: 0.5rem groove rgba(120, 169, 243, 0.959);
+#card-yellow2:hover {
+    animation-direction: alternate;
+	animation: spincc 1.5s infinite;
+    outline: 0.5rem groove rgba(243, 241, 120, 0.959);
 }
 
 
@@ -166,17 +169,34 @@ p {
     100% {transform: rotate(360deg);}
 }
 
-@keyframes pink-gradient {
-    100%     {background-color: rgba(226, 141, 243, 0.555);}
-    50%     {background-color: rgba(228, 161, 241, 0.745);}
-    50%     {background-color: rgba(229, 175, 240, 0.879);}
-    50%     {background-color: rgba(224, 141, 240, 0.841);}
-    100%     {background-color: rgba(226, 141, 243, 0.555);}
-
+@keyframes spincc{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
 }
 
+@keyframes pink-gradient {
+    75%     {background-color: rgb(255, 152, 248);}
+    50%     {background-color: rgb(234, 124, 229);}
+    50%     {background-color: rgb(250, 62, 219)}
+    50%     {background-color: rgb(234, 124, 229);}
+    25%     {background-color: rgb(255, 152, 248);}
+}
 
+@keyframes blue-gradient {
+    100%    {background-color: rgb(152, 183, 255);}
+    50%     {background-color: rgb(124, 146, 234);}
+    50%     {background-color: rgb(41, 34, 240)}
+    50%     {background-color: rgb(124, 146, 234);}
+    100%    {background-color: rgb(152, 183, 255);}
+}
 
+@keyframes yellow-gradient {
+    100%     {background-color: rgb(255, 240, 152);}
+    50%     {background-color: rgb(234, 221, 124);}
+    50%     {background-color: rgb(244, 250, 62);}
+    50%     {background-color: rgb(234, 221, 124);}
+    100%     {background-color: rgb(255, 240, 152);}
+}
 
 .header-pink:hover{
     color: rgba(228, 47, 219, 0.839);
