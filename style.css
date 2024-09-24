@@ -4,6 +4,7 @@ html,
    margin: 0;
     padding: 0;
     font-size: 10px;
+    font-family: "Mochiy Pop One", sans-serif;
     
 }
 
@@ -32,13 +33,12 @@ p {
 }
 
 .title:hover{
-    color: rgba(125, 23, 120, 0.839);
+    color: rgb(255, 204, 238);
     transform: scale(.95);
-    filter: drop-shadow(5);
-    transform: scale(.9);
-
     animation-name: pink-gradient;
     animation-duration: 2s;
+
+    filter: drop-shadow(6px 6px 6px rgb(176, 116, 182));
 }
   
 
@@ -56,8 +56,8 @@ p {
 }
 
 .card {
-    width: 20rem;
-    height: 25rem;
+    width: 26rem;
+    height: 28rem;
     border-radius: 1rem;
     border-width: 1rem;
     margin:1rem;
@@ -96,8 +96,6 @@ p {
     50%     {background-color: rgba(239, 180, 251, 0.745)}
     75%     {background-color: rgba(217, 154, 230, 0.879)}
     100%     {background-color: rgba(226, 124, 247, 0.841)}
-
-
 }
 
 
@@ -138,8 +136,8 @@ p {
 #card-pink:hover {
 	animation: spin 1.5s infinite;
     outline: 0.5rem groove rgba(243, 120, 233, 0.959);
+    filter: drop-shadow(6px 6px 6px rgb(243, 120, 233));
 }
-
 
 
 #card-blue:hover {
@@ -147,6 +145,7 @@ p {
     animation: blue-gradient;
     animation-duration: 2s;
     outline: 0.5rem groove rgba(120, 169, 243, 0.959);
+    filter: drop-shadow(6px 6px 6px rgb(120, 169, 243));
 }
 
 #card-yellow1:hover {
@@ -155,12 +154,16 @@ p {
     animation-duration: 2s;
     outline: 0.5rem groove rgba(243, 241, 120, 0.959);
 
+    filter: drop-shadow(6px 6px 6px rgb(243, 241, 120));
+
 }
 
 #card-yellow2:hover {
     animation-direction: alternate;
 	animation: spincc 1.5s infinite;
     outline: 0.5rem groove rgba(243, 241, 120, 0.959);
+
+    filter: drop-shadow(6px 6px 6px rgb(243, 241, 120));
 }
 
 
@@ -175,11 +178,11 @@ p {
 }
 
 @keyframes pink-gradient {
-    75%     {background-color: rgb(255, 152, 248);}
-    50%     {background-color: rgb(234, 124, 229);}
-    50%     {background-color: rgb(250, 62, 219)}
-    50%     {background-color: rgb(234, 124, 229);}
-    25%     {background-color: rgb(255, 152, 248);}
+    0%     {background-color: rgb(226, 154, 221);}
+    25%     {background-color: rgb(234, 124, 229);}
+    50%     {background-color: rgb(221, 96, 200)}
+    75%     {background-color: rgb(234, 124, 229);}
+    100%     {background-color: rgb(226, 154, 221);}
 }
 
 @keyframes blue-gradient {
@@ -201,7 +204,7 @@ p {
 .header-pink:hover{
     color: rgba(228, 47, 219, 0.839);
     transform: scale(1.5);
-    filter: saturate(75%)
+    filter: saturate(75%);
 }
 
 .header-yellow:hover{
