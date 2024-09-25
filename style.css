@@ -1,21 +1,15 @@
 body, 
 html,
 * {
-   margin: 0;
+    margin: 0;
     padding: 0;
     font-size: 10px;
     font-family: "Mochiy Pop One", sans-serif;
-    
 }
 
 h2 {
     font-size: 2rem;
     margin: 1rem;
-}
-
-p {
-    margin: 0.5rem;
-    font-size: 1.5rem;
 }
 
 .title{
@@ -44,10 +38,10 @@ p {
 
 .container{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row;
 
     background-image: url(https://wallpapercave.com/wp/wp7744181.jpg);
     background-repeat: no-repeat;
@@ -55,9 +49,9 @@ p {
     background-position: center;
 }
 
-.card {
-    width: 26rem;
-    height: 28rem;
+.card{
+    width: 20rem;
+    height: 26rem;
     border-radius: 1rem;
     border-width: 1rem;
     margin:1rem;
@@ -66,7 +60,6 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-
 }
 
 
@@ -91,44 +84,10 @@ p {
 }
 
 
-@keyframes pink-c {
-    0%     {background-color: rgba(226, 141, 243, 0.555);}
-    50%     {background-color: rgba(239, 180, 251, 0.745)}
-    75%     {background-color: rgba(217, 154, 230, 0.879)}
-    100%     {background-color: rgba(226, 124, 247, 0.841)}
-}
-
-
-@media screen and (min-width: 1100px;){
-    .container{
-        flex-direction: row;
-    }
-
-    .card-blue{
-        width: 90%;
-    }
-}
-
-@media screen and (min-width: 800px;){
-    .container{
-        flex-direction: column;
-    }
-
-    .card-blue{
-        width: 90%;
-    }
-    .card-pink{
-        width: 90%;
-    }
-    .card-yellow{
-        width: 90%;
-    }
-}
-
 .card-img {
-    width: 95%;
-    height: 95%;
-    object-fit: cover;
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
     
 }
 
@@ -218,9 +177,6 @@ p {
     filter: sepia(50%);
 }
 
-
-
-
 .header-pink{
     color: rgb(194, 64, 151);
 }
@@ -233,8 +189,26 @@ p {
     color: rgb(64, 73, 194);
 }
 
+@media screen and (min-width: 1100px){
+    .card{
+        width: 20%;
+        margin: 1%;
+    }
 
-.card-desc {
-    margin: 0.5rem;
-    font-size: 1.5rem;
+    .card-img{
+        width:90%;
+        height:90%;
+    }
+}
+
+
+@media screen and (max-width: 1100px){
+    .container{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 90%;
+        height: 90%;
+    }
 }
